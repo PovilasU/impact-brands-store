@@ -1,0 +1,77 @@
+// Variables
+$mobile-width: 393px;
+$tablet-width: 768px;
+$desktop-width: 1920px;
+
+// Base styles
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  &__cta {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+// Media queries
+@media (min-width: $tablet-width) {
+  .hero__title {
+    font-size: 3rem;
+  }
+
+  .hero__description {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__title {
+    font-size: 4rem;
+  }
+
+  .hero__description {
+    font-size: 1.5rem;
+  }
+}
