@@ -1,0 +1,11 @@
+@use 'base/variables';
+@use 'components/header';
+@use 'components/hero';
+@use 'components/footer';
+
+// Base styles
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}

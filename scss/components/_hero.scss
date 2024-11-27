@@ -1,0 +1,44 @@
+@use '../base/variables' as *;
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  &__cta {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+}
+
+// Media queries
+@media (min-width: $tablet-width) {
+  .hero__title {
+    font-size: 3rem;
+  }
+
+  .hero__description {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__title {
+    font-size: 4rem;
+  }
+
+  .hero__description {
+    font-size: 1.5rem;
+  }
+}
